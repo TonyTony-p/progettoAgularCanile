@@ -29,16 +29,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="nome-cane">Cane1</td>
-                    <td>11</td>
-                    <td><span class="pill">N/A</span></td>
-                    <td class="data-nascita">15/03/2020</td>
-                    <td class="pedigree"><div class="ped">PED-1001</div></td>
+                <tr *ngFor="let cane of listaCani">
+                    <td class="nome-cane"><div class="pill">{{cane.nome}}</div></td>
+                    <td><div class="pill">{{cane.peso}}</div></td>
+                    <td class="pill"><div class="pil">{{cane.razza}}</div></td>
+                    <td class="data-nascita"><div class="data">{{cane.dataNascita}}</div></td>
+                    <td class="pedigree"><div class="ped">{{cane.peso}}</div></td>
                     <td class="azioni">
-                        <button class="iconButton">👁️</button>
+                    <div class="treBottoni">
+                        <button class="iconButton">🔍</button>
                         <button class="iconButton">🖋️</button>
                         <button class="iconButton">🗑️</button>
+                        </div>
                     </td>
                 </tr>
             </tbody>
