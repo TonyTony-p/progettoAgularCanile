@@ -1,0 +1,47 @@
+.Top-Container{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title{
+    font-size: xx-large;
+}
+
+.buttonNew{
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.search-container{
+    border: 1px solid rgb(136, 131, 131);
+    border-radius: 5px;
+    height: 70px;
+    box-shadow: 0px 5px 0px grey;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-card{
+    margin-left: 20px;
+    width: 50%;
+    height: 30px;
+}
+
+.search-card input{
+    height: 100%;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.search-card button{
+    height: 100%;
+}
