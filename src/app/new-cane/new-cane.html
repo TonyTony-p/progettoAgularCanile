@@ -1,0 +1,105 @@
+<div class="container">
+  <div class="header">
+    <button class="btn-back" (click)="onCancel()">
+      <span class="arrow">←</span> Annulla
+    </button>
+    <h1>🐕 Nuovo Cane</h1>
+  </div>
+ 
+  <div class="form-card">
+    <div class="form-header">
+      <span class="edit-icon">✎</span>
+      <h2>Nuovo Cane</h2>
+    </div>
+ 
+    <form [formGroup]="caneForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome">Nome <span class="required">*</span></label>
+          <input
+            type="text"
+            id="nome"
+            formControlName="nome"
+            placeholder="Inserisci il nome del cane"
+            class="form-control"
+          />
+        </div>
+ 
+        <div class="form-group">
+          <label for="peso">Peso (kg) <span class="required">*</span></label>
+          <input
+            type="number"
+            id="peso"
+            formControlName="peso"
+            placeholder="0.0"
+            step="0.1"
+            class="form-control"
+          />
+        </div>
+      </div>
+ 
+      <div class="form-row">
+        <div class="form-group">
+          <label for="dataNascita">Data di Nascita <span class="required">*</span></label>
+          <input
+            type="date"
+            id="dataNascita"
+            formControlName="dataNascita"
+            placeholder="gg/mm/aaaa"
+            class="form-control"
+          />
+        </div>
+ 
+        <div class="form-group">
+          <label for="pedigree">Pedigree <span class="required">*</span></label>
+          <input
+            type="text"
+            id="pedigree"
+            formControlName="pedigree"
+            placeholder="Inserisci il pedigree del cane"
+            class="form-control"
+          />
+        </div>
+      </div>
+ 
+      <div class="form-row">
+        <div class="form-group">
+          <label for="razza">
+            <span class="dog-icon-small">🐕</span> Razza <span class="required">*</span>
+          </label>
+          <select id="razza" formControlName="razza" class="form-control">
+            <option value="">Seleziona una razza</option>
+            <option *ngFor="let razza of razze" [value]="razza">{{ razza }}</option>
+          </select>
+        </div>
+ 
+        <div class="form-group">
+          <label for="proprietario">
+            <span class="user-icon">👤</span> Proprietario
+          </label>
+          <select id="proprietario" formControlName="proprietario" class="form-control">
+            <option value="">Nessun proprietario</option>
+            <option *ngFor="let prop of proprietari" [value]="prop.id">{{ prop.nome }}</option>
+          </select>
+        </div>
+      </div>
+ 
+      <div class="info-box">
+        <span class="info-icon">ℹ</span>
+        <p>
+          <strong>Nota:</strong> I campi contrassegnati con * sono obbligatori. Il proprietario è opzionale e
+          può essere assegnato successivamente.
+        </p>
+      </div>
+ 
+      <div class="form-actions">
+        <button type="button" class="btn btn-cancel" (click)="onCancel()">
+          <span class="x-icon">✕</span> Annulla
+        </button>
+        <button type="submit" class="btn btn-create" [disabled]="!caneForm.valid">
+          <span class="plus-icon">+</span> Crea
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

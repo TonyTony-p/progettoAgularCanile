@@ -3,16 +3,16 @@
     <div class="Top-Container">
         <p class="title"> 🐕 Gestione Cani</p>
         
-            <button class="buttonNew">+ Nuovo Cane</button>
+            <button class="buttonNew" (click)="onClick()">+ Nuovo Cane</button>
         </div>
        
 
         <div class="search-container">
         <div class="search-card">
-            <input type="search" placeholder="Cerca per nome..."/>
-            <button class="search-button">
-                🔎
-            </button>
+           <input type="search" placeholder="Cerca per nome..." [(ngModel)]="searchTerm" (input)="onSearch()"/>
+      <button class="search-button">
+        🔎
+      </button>
          </div>
         </div>
 
@@ -29,12 +29,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let cane of listaCani">
+                <tr *ngFor="let cane of caniFiltrati">
                     <td class="nome-cane"><div class="pill">{{cane.nome}}</div></td>
                     <td><div class="pill">{{cane.peso}}</div></td>
                     <td class="pill"><div class="pil">{{cane.razza}}</div></td>
                     <td class="data-nascita"><div class="data">{{cane.dataNascita}}</div></td>
-                    <td class="pedigree"><div class="ped">{{cane.peso}}</div></td>
+                    <td class="pedigree"><div class="ped">{{cane.pedigree}}</div></td>
                     <td class="azioni">
                     <div class="treBottoni">
                         <button class="iconButton">🔍</button>
