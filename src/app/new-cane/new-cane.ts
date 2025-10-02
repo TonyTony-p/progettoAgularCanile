@@ -2,21 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Cane } from '../cane';
  
 interface Proprietario {
   id: number;
   nome: string;
 }
  
-interface Cane {
-  nome: string;
-  peso: number;
-  dataNascita: string;
-  pedigree: string;
-  razza: string;
-  proprietarioId?: number;
-}
- 
+
 @Component({
   selector: 'app-new-cane',
   imports: [CommonModule, ReactiveFormsModule],
