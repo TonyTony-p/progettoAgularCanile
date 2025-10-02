@@ -1,30 +1,50 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { ServiceCani } from '../service-cani';
+import { Cane } from '../cane';
+
 @Component({
   selector: 'app-cane-list',
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './cane-list.html',
   styleUrl: './cane-list.css'
 })
 export class CaneList implements OnInit {
-  listaCani = [
-    {
-      nome: 'Cane1',
-      peso: 11,
-      razza: 'Labrador',
-      dataNascita: '15/03/2020',
-      pedigree: 'PED-1001'
-    },
-    {
-      nome: 'Cane2',
-      peso: 8,
-      razza: 'Beagle',
-      dataNascita: '10/07/2019',
-      pedigree: 'PED-1002'
-    }
+  searchTerm: string = '';
+  caniFiltrati: any[] = [];
+  listaCani: Cane[] = [
   ];
+  
 
-  constructor() {}
 
-  ngOnInit(): void {}
+  constructor(private router: Router, private serviceCani : ServiceCani) {}
+
+  goToNewCane() {
+
+    this.router.navigate(['/nuovo-cane']);
+  }
+
+  goToEditCane(id: number) {
+  this.router.navigate(['/modifica-cane', id]);
+}
+
+
+  ngOnInit(): void {
+    this.listaCani = this.serviceCani.listaCani;
+    this.caniFiltrati = this.listaCani;
+  }
+
+  
+
+  onSearch(): void {
+    if (this.searchTerm.trim() === '') {
+      this.caniFiltrati = this.listaCani;
+    } else {
+      this.caniFiltrati = this.listaCani.filter(cane =>
+        cane.nome.toLowerCase().includes(this.searchTerm.toLowerCase())
+      );
+    }
+  }
 }
