@@ -1,19 +1,11 @@
 import { Injectable } from '@angular/core';
-<<<<<<< HEAD
 import { Cane } from './cane';
-=======
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServiceCani {
-<<<<<<< HEAD
   listaCani: Cane[] = [
-=======
-  
-    listaCani =[
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
     {
         "dataNascita": "2020-01-05",
         "id": 1,
@@ -47,11 +39,7 @@ export class ServiceCani {
         "nome": "Cane4",
         "pedigree": "PED-1004",
         "peso": 14.0,
-<<<<<<< HEAD
         "razza": null,
-=======
-        "razza": "pastore tedesco",
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
         "utente": null
     },
     {
@@ -198,9 +186,5 @@ export class ServiceCani {
         "razza": null,
         "utente": null
     }
-<<<<<<< HEAD
   ];
-=======
-];
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 }

@@ -3,7 +3,6 @@
     <button class="btn-back" (click)="onCancel()">
       <span class="arrow">←</span> Annulla
     </button>
-<<<<<<< HEAD
     <h1 *ngIf="!editing">🐕 Nuovo Cane</h1>
     <h1 *ngIf="editing">✎ Modifica Cane</h1>
   </div>
@@ -15,17 +14,6 @@
       <h2 *ngIf="editing">Modifica Cane</h2>
     </div>
 
-=======
-    <h1>🐕 Nuovo Cane</h1>
-  </div>
- 
-  <div class="form-card">
-    <div class="form-header">
-      <span class="edit-icon">✎</span>
-      <h2>Nuovo Cane</h2>
-    </div>
- 
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
     <form [formGroup]="caneForm" (ngSubmit)="onSubmit()">
       <div class="form-row">
         <div class="form-group">
@@ -38,11 +26,6 @@
             class="form-control"
           />
         </div>
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
         <div class="form-group">
           <label for="peso">Peso (kg) <span class="required">*</span></label>
           <input
@@ -55,11 +38,6 @@
           />
         </div>
       </div>
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
       <div class="form-row">
         <div class="form-group">
           <label for="dataNascita">Data di Nascita <span class="required">*</span></label>
@@ -71,11 +49,6 @@
             class="form-control"
           />
         </div>
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
         <div class="form-group">
           <label for="pedigree">Pedigree <span class="required">*</span></label>
           <input
@@ -87,11 +60,6 @@
           />
         </div>
       </div>
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
       <div class="form-row">
         <div class="form-group">
           <label for="razza">
@@ -102,30 +70,16 @@
             <option *ngFor="let razza of razze" [value]="razza">{{ razza }}</option>
           </select>
         </div>
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
         <div class="form-group">
           <label for="proprietario">
             <span class="user-icon">👤</span> Proprietario
           </label>
-<<<<<<< HEAD
           <select id="proprietario" formControlName="proprietarioId" class="form-control">
-=======
-          <select id="proprietario" formControlName="proprietario" class="form-control">
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
             <option value="">Nessun proprietario</option>
             <option *ngFor="let prop of proprietari" [value]="prop.id">{{ prop.nome }}</option>
           </select>
         </div>
       </div>
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
       <div class="info-box">
         <span class="info-icon">ℹ</span>
         <p>
@@ -133,16 +87,10 @@
           può essere assegnato successivamente.
         </p>
       </div>
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
       <div class="form-actions">
         <button type="button" class="btn btn-cancel" (click)="onCancel()">
           <span class="x-icon">✕</span> Annulla
         </button>
-<<<<<<< HEAD
 
         
         <button *ngIf="!editing" type="submit" class="btn btn-create" [disabled]="!caneForm.valid">
@@ -155,12 +103,3 @@
     </form>
   </div>
 </div>
-=======
-        <button type="submit" class="btn btn-create" [disabled]="!caneForm.valid">
-          <span class="plus-icon">+</span> Crea
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd

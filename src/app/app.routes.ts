@@ -4,7 +4,6 @@ import { CaneList } from './cane-list/cane-list';
 import { NewCane } from './new-cane/new-cane';
 
 export const routes: Routes = [
-<<<<<<< HEAD
   {
     path: 'cani',
     component: CaneList
@@ -22,10 +21,3 @@ export const routes: Routes = [
     pathMatch: 'full'
   }
 ];
-=======
-
-    { path: '', redirectTo: 'cani', pathMatch: 'full' },
-    {path : 'cani', component: CaneList},
-    {path : 'newCane', component: NewCane}
-];
->>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
