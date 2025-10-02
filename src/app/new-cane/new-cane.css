@@ -4,14 +4,22 @@
   padding: 20px;
   min-height: 100vh;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .header {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .btn-back {
   display: flex;
   align-items: center;
@@ -24,6 +32,7 @@
   font-size: 14px;
   transition: background-color 0.2s;
 }
+<<<<<<< HEAD
 
 .btn-back:hover {
   background-color: #f5f5f5;
@@ -33,17 +42,36 @@
   font-size: 18px;
 }
 
+=======
+ 
+.btn-back:hover {
+  background-color: #f5f5f5;
+}
+ 
+.arrow {
+  font-size: 18px;
+}
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .dog-icon {
   width: 40px;
   height: 40px;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .header h1 {
   margin: 0;
   font-size: 28px;
   color: #333;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .form-card {
   background-color: white;
   border-radius: 8px;
@@ -51,7 +79,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .form-header {
   background-color: #0000ff;
   color: white;
@@ -60,33 +92,57 @@
   align-items: center;
   gap: 10px;
 }
+<<<<<<< HEAD
 
 .edit-icon {
   font-size: 20px;
 }
 
+=======
+ 
+.edit-icon {
+  font-size: 20px;
+}
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .form-header h2 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
 }
+<<<<<<< HEAD
 
 form {
   padding: 30px;
 }
 
+=======
+ 
+form {
+  padding: 30px;
+}
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .form-group {
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .form-group label {
   font-size: 14px;
   font-weight: 600;
@@ -96,11 +152,19 @@ form {
   align-items: center;
   gap: 5px;
 }
+<<<<<<< HEAD
 
 .required {
   color: #dc3545;
 }
 
+=======
+ 
+.required {
+  color: #dc3545;
+}
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .form-control {
   padding: 10px 12px;
   border: 1px solid #ccc;
@@ -108,32 +172,56 @@ form {
   font-size: 14px;
   transition: border-color 0.2s;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .form-control:focus {
   outline: none;
   border-color: #007bff;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
 }
+<<<<<<< HEAD
 
 .form-control::placeholder {
   color: #999;
 }
 
+=======
+ 
+.form-control::placeholder {
+  color: #999;
+}
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 select.form-control {
   cursor: pointer;
   background-color: white;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   opacity: 1;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .dog-icon-small,
 .user-icon {
   font-size: 16px;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .info-box {
   background-color: #d1ecf1;
   border: 1px solid #bee5eb;
@@ -143,27 +231,43 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   gap: 10px;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .info-icon {
   font-size: 18px;
   color: #0c5460;
   flex-shrink: 0;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .info-box p {
   margin: 0;
   font-size: 13px;
   color: #0c5460;
   line-height: 1.5;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .form-actions {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
   margin-top: 30px;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .btn {
   padding: 10px 24px;
   border: none;
@@ -176,50 +280,90 @@ input[type="number"]::-webkit-outer-spin-button {
   gap: 8px;
   transition: all 0.2s;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .btn-cancel {
   background-color: #6c757d;
   color: white;
 }
+<<<<<<< HEAD
 
 .btn-cancel:hover {
   background-color: #5a6268;
 }
 
+=======
+ 
+.btn-cancel:hover {
+  background-color: #5a6268;
+}
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .btn-create {
   background-color: #007bff;
   color: white;
 }
+<<<<<<< HEAD
 
 .btn-create:hover {
   background-color: #0056b3;
 }
 
+=======
+ 
+.btn-create:hover {
+  background-color: #0056b3;
+}
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .btn-create:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 .x-icon,
 .plus-icon {
   font-size: 16px;
   font-weight: bold;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 @media (max-width: 768px) {
   .form-row {
     grid-template-columns: 1fr;
   }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
   .header {
     flex-direction: column;
     align-items: flex-start;
   }
+<<<<<<< HEAD
 
   .form-actions {
     flex-direction: column;
   }
 
+=======
+ 
+  .form-actions {
+    flex-direction: column;
+  }
+ 
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
   .btn {
     width: 100%;
     justify-content: center;

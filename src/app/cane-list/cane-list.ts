@@ -1,10 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ServiceCani } from '../service-cani';
 import { Cane } from '../cane';
 
+=======
+import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ServiceCani } from '../service-cani';
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 @Component({
   selector: 'app-cane-list',
   imports: [CommonModule, FormsModule],
@@ -12,6 +18,7 @@ import { Cane } from '../cane';
   styleUrl: './cane-list.css'
 })
 export class CaneList implements OnInit {
+<<<<<<< HEAD
   searchTerm: string = '';
   caniFiltrati: any[] = [];
   listaCani: Cane[] = [
@@ -37,6 +44,28 @@ export class CaneList implements OnInit {
   }
 
   
+=======
+
+searchTerm: string = '';
+caniFiltrati: any[] = [];
+listaCani : any[] = [];
+
+constructor(private router: Router, private serviceCani : ServiceCani) {}
+ 
+
+ngOnInit(): void {
+    this.listaCani = this.serviceCani.listaCani;
+    this.caniFiltrati = this.listaCani;
+  }
+ 
+  onClick() {
+    this.router.navigate(['/newCane']);
+  }
+
+
+
+
+>>>>>>> b970692dd9167b6b113037f8ef20992e1882a2bd
 
   onSearch(): void {
     if (this.searchTerm.trim() === '') {
